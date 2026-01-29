@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="dev1" class= "com.myLearning.ConstructorAndSetterInjectionInSpring.Dev">
+    <!-- <property name = "age" value = "22"/>  --> 
+    <property name="laptop" ref="l1"></property>
+    </bean>  
+     
+    <bean id="dev2" class= "com.myLearning.ConstructorAndSetterInjectionInSpring.Dev">
+   <!-- <constructor-arg value="14"></constructor-arg> --> 
+    <constructor-arg index = "0" value="14"></constructor-arg>
+    <constructor-arg index = "1" value="45000"></constructor-arg>
+    </bean>
+    
+    <bean id="l1" class = "com.myLearning.ConstructorAndSetterInjectionInSpring.Laptop"></bean>
+    
+     
+     
+    
+    
+    
+</beans>
