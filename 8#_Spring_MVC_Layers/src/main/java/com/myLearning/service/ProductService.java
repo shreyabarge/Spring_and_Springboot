@@ -11,7 +11,7 @@ import com.myLearning.model.Product;
 @Service
 public class ProductService {
 	
-	// Creates a list of products (temporary hardcoded data)
+	// Creates a list of products (temporary hard coded data)
 	List<Product> products = Arrays.asList(
 			                 new Product(101, "Iphone", 50000),
 			                 new Product(102, "Canon Camera", 70000),
